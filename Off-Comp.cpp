@@ -42,9 +42,9 @@ int main()
         {
             input_repeat = false;
             if (i > 0)
-                cout <<"(Stage "<<i+1<<"/3"<<") "<<"Insert number of "<<names[i]<<" (0-59)"<<": ";
+                cout <<"(Stage "<<i+1<<"/3"<<") "<<"Insert a number of "<<names[i]<<" (0-59)"<<": ";
             else
-                cout <<"(Stage "<<i+1<<"/3"<<") "<<"Insert number of "<<names[i]<<" (0-99)"<<": ";
+                cout <<"(Stage "<<i+1<<"/3"<<") "<<"Insert a number of "<<names[i]<<" (0-99)"<<": ";
             cin >> input[i];
             try
             {
@@ -85,7 +85,7 @@ int main()
         }
 
 
-        cout <<"The computer will be switched off in: "<<ex_zeroes[0]<<units[0]<<":"<<ex_zeroes[1]<<units[1]<<":"<<ex_zeroes[2]<<units[2];
+        cout <<"The computer will be shut down in: "<<ex_zeroes[0]<<units[0]<<":"<<ex_zeroes[1]<<units[1]<<":"<<ex_zeroes[2]<<units[2];
 
         units[2] -= 1;
         if (units[2] < 0)
@@ -103,7 +103,7 @@ int main()
     }
 
     gotoxy(0, y);
-    cout <<"The computer will be switched off in: 00:00:00"<<endl;
+    cout <<"The computer will be shut down in: 00:00:00"<<endl;
     system("shutdown -f -s");
     getch();
 }
